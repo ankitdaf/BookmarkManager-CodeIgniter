@@ -1,0 +1,33 @@
+README
+
+Simple Bookmark Manager using CodeIgniter
+
+This is a sample Bookmark Manager app I wrote while trying out the CodeIgniter framework.
+
+A few things about the project :
+
+What it can do :
+
+- Add bookmarks with the fields : URL, tag,description
+- Search for bookmarks
+- Show all bookmarks
+
+Structure:
+
+- The model is "bookmarks_model" which handles data storage,retrieval and logic
+- The views are split into header,footer templates, a searchbar template, and an index page to generate the body of the page
+- The controller is mainly showbookmarks
+- The stylesheet is in the css folder
+
+Database:
+
+- The database configuration can be done in the application/config/database.php file
+- The database consists of a "bookmarks" database with a "bookmarks" table
+- The "bookmarks" table has the following fields: id,link,tag,description
+- link is a non-empty field, the rest can be empty
+
+Also :
+
+- I hosted it using XAMPP, it can be accessed using base_url/index.php/showbookmarks
+- Add these files to your existing CodeIgniter structure, and you should be fine
+- There are issues with the CodeIgniter license, read more here : http://t.co/q4tINphB
